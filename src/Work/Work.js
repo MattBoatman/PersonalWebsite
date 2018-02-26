@@ -18,13 +18,8 @@ class Work extends Component {
         />
         <TimeBlock
           place="Capital One"
-          duration="July 2015 - May 2017"
+          duration="July 2014 - May 2017"
           title="Senior Software Engineer"
-        />
-        <TimeBlock
-          place="Capital One"
-          duration="July 2014 - July 2015"
-          title="Software Engineer"
         />
       </ContentBlock>
     );
