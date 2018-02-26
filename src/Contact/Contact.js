@@ -23,8 +23,8 @@ const Contact = () => {
     <ContentBlock backgroundColor="#CFD8DC" color="#004D40" title="Contact">
       <div style={styles.content}>
         <p>
-          If you want to work on something together or just connect, please
-          reach out!{" "}
+          If you are interested in collaborating or would like to connect,
+          please reach out!{" "}
           <a
             style={styles.email}
             href="mailto:matthewd.boatman@gmail.com"
@@ -35,11 +35,11 @@ const Contact = () => {
         </p>
       </div>
       <SocialAccounts
-          twitter="https://twitter.com/boatmanmd"
-          instagram="https://www.instagram.com/mdboatman/"
-          linkedin="https://www.linkedin.com/in/mattboatman/"
-          github="https://github.com/MattBoatman"
-        />
+        twitter="https://twitter.com/boatmanmd"
+        instagram="https://www.instagram.com/mdboatman/"
+        linkedin="https://www.linkedin.com/in/mattboatman/"
+        github="https://github.com/MattBoatman"
+      />
     </ContentBlock>
   );
 };

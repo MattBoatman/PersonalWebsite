@@ -21,12 +21,12 @@ class About extends Component {
           </p>
           <p>
             I'm happily married to my wonderful wife, Julie, who is a resident
-            at Mount Carmel. We are proud dog parents to the cutest dog in the
-            whole world, Belle.
+            physician at Mount Carmel West hospital. We are proud dog parents to
+            the cutest dog in the whole world, Belle.
           </p>
           <p>
             In my free time I love to cook, garden, drink coffee in the morning
-            and beer at night, play video or board games, and eat good food.
+            and beer at night, play video or board games, and eating good food.
           </p>
         </div>
       </ContentBlock>
