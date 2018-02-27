@@ -1,0 +1,30 @@
+.avatarWrapper {
+  width: 80%;
+  margin-top: 20;
+}
+.pageLeft {
+  width: 50%;
+  display: inline-block;
+}
+.pageContent {
+  height: 93vh;
+  border-right: 1px solid #efdcd3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .pageLeft {
+        width: 100%;
+        display: block;
+      }
+      .pageContent {
+        height: auto;
+        padding: 20px 0;
+      }
+}

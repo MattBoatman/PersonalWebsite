@@ -1,35 +1,16 @@
 import React from "react";
 import Avatar from "../Avatar";
 import sqMe from "../MattBoatman_sq.JPG";
+import './StaticContent.css';
 
-const styles = {
-  avatarWrapper: {
-    width: "80%",
-    marginTop: 20
-  },
-  pageLeft:{
-    width: "50%",
-    display: 'inline-block'
-  },
-  pageContent: {
-    height: '93vh',
-    borderRight: "1px solid #efdcd3",
-    overflow: "hidden",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  about: {
-    textAlign: 'center'
-  }
-};
+
 const StaticContent = () => {
   return (
-    <div style={styles.pageLeft}>
-    <div style={styles.pageContent}>
-      <div style={styles.avatarWrapper}>
+    <div className="pageLeft">
+    <div className="pageContent">
+      <div className="avatarWrapper">
         <Avatar imageURL={sqMe} />
-        <div style={styles.about} >
+        <div className="about" >
         <p>I'm Matt.</p>
         </div>
       </div>

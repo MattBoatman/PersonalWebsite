@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import './ContentBlock.css';
 
 const ContentBlock = props => {
   return (
     <div
       style={{
-        padding: 64,
         backgroundColor: props.backgroundColor,
         color: props.color
       }}
+      className="contentBlock"
     >
         <h2 style={{margin:0}}>{props.title}</h2>
       {props.children}

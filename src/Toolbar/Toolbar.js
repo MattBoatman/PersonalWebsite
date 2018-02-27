@@ -21,9 +21,9 @@ const Toolbar = props => {
   return (
     <div style={styles.toolbarWrapper}>
       <span style={styles.title}>{props.title}</span>
-      <div style={styles.rightLinks}>
+      {/* <div style={styles.rightLinks}>
         {props.rightLinks.map(elem => <ToolbarButtons key={elem} button={elem} />)}
-      </div>
+      </div> */}
     </div>
   );
 };

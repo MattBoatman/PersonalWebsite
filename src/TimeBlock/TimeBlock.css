@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 2px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16;
+    line-height: 22px
+  };
+  .smallerText {
+      font-size: 14;
+  }
+  .title {
+      margin: 0
+  }
