@@ -1,16 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const styles = {
   wrapper: {
-    borderRadius: "50%",
-    width: "100%"
+    borderRadius: '50%',
+    width: '100%'
   }
 };
 const Avatar = props => {
-  return (
-      <img style={styles.wrapper} src={props.imageURL} alt="Matt Boatman"/>
-  );
+  return <img style={styles.wrapper} src={props.imageURL} alt="Matt Boatman" />;
 };
 
 Avatar.propTypes = {

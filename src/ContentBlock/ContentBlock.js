@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import './ContentBlock.css';
 
 const ContentBlock = props => {
@@ -11,7 +11,7 @@ const ContentBlock = props => {
       }}
       className="contentBlock"
     >
-        <h2 style={{margin:0}}>{props.title}</h2>
+      <h2 style={{ margin: 0 }}>{props.title}</h2>
       {props.children}
     </div>
   );

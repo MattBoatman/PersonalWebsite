@@ -1,18 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ToolbarButtons from "./ToolbarButtons";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ToolbarButtons from './ToolbarButtons';
 
 const styles = {
   toolbarWrapper: {
-    borderBottom: "1px solid",
-    display: "flex",
+    borderBottom: '1px solid',
+    display: 'flex',
     padding: 20
   },
   title: {
     fontSize: 18,
-    textTransform: "uppercase",
-    marginRight: "auto",
-    letterSpacing: ".15em",
+    textTransform: 'uppercase',
+    marginRight: 'auto',
+    letterSpacing: '.15em'
   },
   rightLinks: {}
 };

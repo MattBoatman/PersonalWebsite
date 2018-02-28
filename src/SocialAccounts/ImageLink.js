@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 const styles = {
   wrapper: {
-    cursor: "pointer",
+    cursor: 'pointer',
     padding: '0 15px 0 0'
   },
   image: {
-    maxWidth: "100%",
-    maxHeight: "100%",
+    maxWidth: '100%',
+    maxHeight: '100%'
   }
 };
 const ImageLink = props => {

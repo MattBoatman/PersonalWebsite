@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import ContentBlock from "../ContentBlock";
+import React, { Component } from 'react';
+import ContentBlock from '../ContentBlock';
 
 const styles = {
   content: {
     fontWeight: 400,
     fontSize: 14,
-    lineHeight: "22px",
+    lineHeight: '22px',
     padding: 0,
     margin: 0
   }

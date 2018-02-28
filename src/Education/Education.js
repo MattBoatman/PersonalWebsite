@@ -1,6 +1,6 @@
-import React from "react";
-import ContentBlock from "../ContentBlock";
-import TimeBlock from "../TimeBlock";
+import React from 'react';
+import ContentBlock from '../ContentBlock';
+import TimeBlock from '../TimeBlock';
 
 const Education = () => {
   return (

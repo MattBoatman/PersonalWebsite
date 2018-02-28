@@ -1,11 +1,15 @@
-import React, { Component } from "react";
-import TimeBlock from "../TimeBlock";
-import ContentBlock from "../ContentBlock";
+import React, { Component } from 'react';
+import TimeBlock from '../TimeBlock';
+import ContentBlock from '../ContentBlock';
 
 class Work extends Component {
   render() {
     return (
-      <ContentBlock backgroundColor="#E8EAF6" color="#00796B" title="Work History">
+      <ContentBlock
+        backgroundColor="#E8EAF6"
+        color="#00796B"
+        title="Work History"
+      >
         <TimeBlock
           place="Improving"
           duration="Nov 2017 - Present"

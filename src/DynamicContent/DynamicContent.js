@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import About from "../About";
-import Work from "../Work";
-import Education from "../Education";
-import Contact from "../Contact";
+import React, { Component } from 'react';
+import About from '../About';
+import Work from '../Work';
+import Education from '../Education';
+import Contact from '../Contact';
 import './DynamicContent.css';
 
 class DynamicContent extends Component {
@@ -17,6 +17,5 @@ class DynamicContent extends Component {
     );
   }
 }
-
 
 export default DynamicContent;

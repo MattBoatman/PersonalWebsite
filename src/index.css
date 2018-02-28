@@ -1,11 +1,11 @@
-html, body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #1E1E30;
-    /* background-color: #1E1E30; */
-    color: #efdcd3;
-    /* font-family: "century-old-style-std",serif; */
-    font-family: "futura-pt",sans-serif;
-    /* font-family: proxima-nova; */
-
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1e1e30;
+  /* background-color: #1E1E30; */
+  color: #efdcd3;
+  /* font-family: "century-old-style-std",serif; */
+  font-family: 'futura-pt', sans-serif;
+  /* font-family: proxima-nova; */
 }
