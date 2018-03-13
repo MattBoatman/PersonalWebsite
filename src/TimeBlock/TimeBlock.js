@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './TimeBlock.css';
+import ImageLink from '../SocialAccounts/ImageLink';
+import link from './link.png';
 
 const TimeBlock = props => {
   return (
@@ -9,17 +11,25 @@ const TimeBlock = props => {
         <span>
           <b>{props.place}</b>
         </span>
-        <span className="smallerText">{props.duration}</span>
+        {props.duration && (
+          <span className="smallerText">{props.duration}</span>
+        )}
+        {props.link && (
+          <span className="iconLink">
+            <ImageLink image={link} href={props.link} />
+          </span>
+        )}
       </div>
-      <p className="title smallerText">{props.title}</p>
+      {props.title && <p className="title smallerText">{props.title}</p>}
     </div>
   );
 };
 
 TimeBlock.propTypes = {
   place: PropTypes.string.isRequired,
-  duration: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  duration: PropTypes.string,
+  title: PropTypes.string,
+  link: PropTypes.string
 };
 
 export default TimeBlock;
