@@ -16,8 +16,8 @@ class About extends Component {
       <ContentBlock backgroundColor="#FFFFFF" color="#1E1D32" title="About">
         <div style={styles.content}>
           <p>
-            I'm a software engineer living in Columbus, Ohio. I work as a Senior
-            Consultant for Improving.
+            I'm Matt Boatman, a software engineer living in Columbus, Ohio. I
+            work as a Senior Consultant for Improving.
           </p>
           <p>
             I'm happily married to my wonderful wife, Julie, who is a resident

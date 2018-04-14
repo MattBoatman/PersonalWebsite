@@ -16,7 +16,11 @@ const TimeBlock = props => {
         )}
         {props.link && (
           <span className="iconLink">
-            <ImageLink image={link} href={props.link} />
+            <ImageLink
+              image={link}
+              href={props.link}
+              alt="Playful Pets website"
+            />
           </span>
         )}
       </div>

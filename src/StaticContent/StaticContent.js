@@ -10,7 +10,7 @@ const StaticContent = () => {
         <div className="avatarWrapper">
           <Avatar imageURL={sqMe} />
           <div className="about">
-            <p>I'm Matt.</p>
+            <h1>I'm Matt Boatman.</h1>
           </div>
         </div>
       </div>

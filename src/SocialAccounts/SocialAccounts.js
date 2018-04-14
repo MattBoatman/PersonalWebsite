@@ -14,10 +14,26 @@ const styles = {
 const SocialAccounts = props => {
   return (
     <div style={styles.wrapper}>
-      <ImageLink href={props.twitter} image={twitter} />
-      <ImageLink href={props.instagram} image={ig} />
-      <ImageLink href={props.linkedin} image={linkedin} />
-      <ImageLink href={props.github} image={git} />
+      <ImageLink
+        href={props.twitter}
+        image={twitter}
+        alt="Twitter Account for Matt Boatman @boatmanmd"
+      />
+      <ImageLink
+        href={props.instagram}
+        image={ig}
+        alt="Instagram Account for Matt Boatman @mdboatman"
+      />
+      <ImageLink
+        href={props.linkedin}
+        image={linkedin}
+        alt="Linkedin for Matt Boatman https://www.linkedin.com/in/mattboatman/"
+      />
+      <ImageLink
+        href={props.github}
+        image={git}
+        alt="Github for Matthew Boatman www.github.com/MattBoatman"
+      />
     </div>
   );
 };

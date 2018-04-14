@@ -13,14 +13,15 @@ const styles = {
 const ImageLink = props => {
   return (
     <a style={styles.wrapper} href={props.href} target="_blank">
-      <img alt="Social Accounts" style={styles.image} src={props.image} />
+      <img alt={props.alt} style={styles.image} src={props.image} />
     </a>
   );
 };
 
 ImageLink.propTypes = {
   href: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired
 };
 
 export default ImageLink;
