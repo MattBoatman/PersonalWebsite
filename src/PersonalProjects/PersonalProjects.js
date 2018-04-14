@@ -7,7 +7,11 @@ class PersonalProjects extends Component {
     return (
       <ContentBlock backgroundColor="#b0bec5" color="#263238" title="Projects">
         <TimeBlock
-          place="Playful Pets Columbus"
+          place={
+            <a href="http://playfulpets.s3-website-us-east-1.amazonaws.com/">
+              Playful Pets
+            </a>
+          }
           title="Local pet daycare website"
           link="http://playfulpets.s3-website-us-east-1.amazonaws.com/"
         />
