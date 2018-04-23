@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
 
 const styles = {
   button: {
@@ -13,11 +14,19 @@ const styles = {
   }
 };
 const ToolbarButtons = props => {
-  return <button style={styles.button}>{props.button}</button>;
+  const onClickHandler = () => {
+    props.history.push(props.link);
+  };
+  return (
+    <button style={styles.button} onClick={onClickHandler}>
+      {props.title}
+    </button>
+  );
 };
 
 ToolbarButtons.propTypes = {
-  button: PropTypes.string.isRequired
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 };
 
-export default ToolbarButtons;
+export default withRouter(ToolbarButtons);

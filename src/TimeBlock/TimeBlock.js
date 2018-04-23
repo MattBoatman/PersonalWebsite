@@ -30,7 +30,7 @@ const TimeBlock = props => {
 };
 
 TimeBlock.propTypes = {
-  place: PropTypes.string.isRequired,
+  place: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   duration: PropTypes.string,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   link: PropTypes.string
