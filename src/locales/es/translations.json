@@ -1,0 +1,36 @@
+{
+  "about": {
+    "title": "Acerca de",
+    "p1":
+      "Soy Matt Boatman, un ingeniero de software que vive en Columbus, Ohio. Trabajo como Consultor Senior para Mejorar.",
+    "p2":
+      "Estoy felizmente casado con mi maravillosa esposa, Julie, que es médico residente en el hospital Mount Carmel West. Somos orgullosos padres de perros del perro más lindo del mundo, Belle.",
+    "p3":
+      "En mi tiempo libre, me encanta cocinar, ir al jardín, tomar café por la mañana y tomar cerveza por la noche, jugar videojuegos o juegos de mesa y comer buena comida."
+  },
+  "static": {
+    "h1": "Soy Matt Boatman."
+  },
+  "contact": {
+    "title": "Contacto",
+    "interested":
+      "Si está interesado en colaborar o desea conectarse, ¡comuníquese!"
+  },
+  "work": {
+    "history": "Historial de trabajo",
+    "improving": "Consultor Senior",
+    "improving-duration": "Nov 2017 - Presente",
+    "aver": "Ingeniero Front-end",
+    "aver-duration": "Julio de 2017 a Noviembre de 2017",
+    "capitalone": "Ingeniero de programación superior",
+    "capitalone-duration": "Julio de 2014 - Mayo de 2017"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Sitio web de guardería para mascotas local"
+  },
+  "education": {
+    "title": "Educación",
+    "duration": "Septiembre de 2009 - Diciembre de 2013"
+  }
+}

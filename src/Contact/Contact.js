@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentBlock from '../ContentBlock';
 import SocialAccounts from '../SocialAccounts';
+import { translate } from 'react-i18next';
 
 const styles = {
   content: {
@@ -18,13 +19,16 @@ const styles = {
   }
 };
 
-const Contact = () => {
+const Contact = ({ t }) => {
   return (
-    <ContentBlock backgroundColor="#CFD8DC" color="#004D40" title="Contact">
+    <ContentBlock
+      backgroundColor="#CFD8DC"
+      color="#004D40"
+      title={t('contact.title')}
+    >
       <div style={styles.content}>
         <p>
-          If you are interested in collaborating or would like to connect,
-          please reach out!{' '}
+          {t('contact.interested')}
           <a
             style={styles.email}
             href="mailto:matthewd.boatman@gmail.com"
@@ -44,4 +48,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default translate()(Contact);

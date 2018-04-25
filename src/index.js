@@ -6,6 +6,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import FantasyFootball from './FantasyFootball/FantasyFootball';
 import Toolbar from './Toolbar';
+import './i18n';
 
 ReactDOM.render(
   <Router>

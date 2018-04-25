@@ -1,0 +1,36 @@
+{
+  "about": {
+    "title": "About",
+    "p1":
+      "I'm Matt Boatman, a software engineer living in Columbus, Ohio. I work as a Senior Consultant for Improving.",
+    "p2":
+      "I'm happily married to my wonderful wife, Julie, who is a resident physician at Mount Carmel West hospital. We are proud dog parents to the cutest dog in the whole world, Belle.",
+    "p3":
+      "In my free time I love to cook, garden, drink coffee in the morning and beer at night, play video or board games, and eating good food."
+  },
+  "static": {
+    "h1": "I'm Matt Boatman."
+  },
+  "contact": {
+    "title": "Contact",
+    "interested":
+      "If you are interested in collaborating or would like to connect, please reach out!"
+  },
+  "work": {
+    "history": "Work History",
+    "improving": "Senior Consultant",
+    "improving-duration": "Nov 2017 - Present",
+    "aver": "Front-end Engineer",
+    "aver-duration": "July 2017 - Nov 2017",
+    "capitalone": "Senior Software Engineer",
+    "capitalone-duration": "July 2014 - May 2017"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Local pet daycare website"
+  },
+  "education": {
+    "title": "Education",
+    "duration": "Sept 2009 - Dec 2013"
+  }
+}
