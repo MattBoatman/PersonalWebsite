@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TimeBlock from '../TimeBlock';
 import ContentBlock from '../ContentBlock';
 import { translate } from 'react-i18next';

@@ -32,5 +32,7 @@
   "education": {
     "title": "Educación",
     "duration": "Septiembre de 2009 - Diciembre de 2013"
-  }
+  },
+  "trans": "Cambiaste el <1><0>idioma</0></1>  <3>{{count}}</3> tiempo",
+  "trans_plural": "Cambiaste el <1><0>idioma</0></1>  <3>{{count}}</3> veces"
 }
