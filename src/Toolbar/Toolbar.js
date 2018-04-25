@@ -22,9 +22,14 @@ const Toolbar = props => {
     <div style={styles.toolbarWrapper}>
       <span style={styles.title}>{props.title}</span>
       <div style={styles.rightLinks}>
-        {props.rightLinks.map(elem => (
-          <ToolbarButtons key={elem.link} title={elem.title} link={elem.link} />
-        ))}
+        {props.rightLinks &&
+          props.rightLinks.map(elem => (
+            <ToolbarButtons
+              key={elem.link}
+              title={elem.title}
+              link={elem.link}
+            />
+          ))}
       </div>
     </div>
   );
@@ -32,7 +37,7 @@ const Toolbar = props => {
 
 Toolbar.propTypes = {
   title: PropTypes.string.isRequired,
-  rightLinks: PropTypes.arrayOf(PropTypes.object).isRequired
+  rightLinks: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default Toolbar;

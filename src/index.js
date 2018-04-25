@@ -10,13 +10,7 @@ import Toolbar from './Toolbar';
 ReactDOM.render(
   <Router>
     <div>
-      <Toolbar
-        title="Matt Boatman"
-        rightLinks={[
-          { title: 'Home', link: '/' },
-          { title: 'Fantasy Commissioner', link: 'fantasy-commissioner' }
-        ]}
-      />
+      <Toolbar title="Matt Boatman" />
       <Route exact path="/" component={App} />
       <Route exact path="/fantasy-commissioner" component={FantasyFootball} />
     </div>
