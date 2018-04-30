@@ -16,15 +16,6 @@
     "interested":
       "If you are interested in collaborating or would like to connect, please reach out!"
   },
-  "work": {
-    "history": "Work History",
-    "improving": "Senior Consultant",
-    "improving-duration": "Nov 2017 - Present",
-    "aver": "Front-end Engineer",
-    "aver-duration": "July 2017 - Nov 2017",
-    "capitalone": "Senior Software Engineer",
-    "capitalone-duration": "July 2014 - May 2017"
-  },
   "projects": {
     "title": "Projects",
     "description": "Local pet daycare website"
@@ -35,5 +26,6 @@
   },
   "trans": "You changed the <1><0> language </0></1> <3> {{count}} </3> time",
   "trans_plural":
-    "You changed the <1><0>language</0></1> <3>{{count}}</3> times"
+    "You changed the <1><0>language</0></1> <3>{{count}}</3> times",
+  "date": "The current date is {{date, MMMM Do}}"
 }

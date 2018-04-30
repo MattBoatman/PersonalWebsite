@@ -33,11 +33,13 @@ class StaticContent extends React.Component {
                   <img
                     className="image"
                     src={us}
-                    onClick={() => this.clickFlag('us')}
+                    alt=""
+                    onClick={() => this.clickFlag('en')}
                   />
                   <img
                     className="image"
                     src={es}
+                    alt=""
                     onClick={() => this.clickFlag('es')}
                   />
                   <div>

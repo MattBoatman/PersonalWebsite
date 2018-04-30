@@ -16,15 +16,6 @@
     "interested":
       "Si está interesado en colaborar o desea conectarse, ¡comuníquese!"
   },
-  "work": {
-    "history": "Historial de trabajo",
-    "improving": "Consultor Senior",
-    "improving-duration": "Nov 2017 - Presente",
-    "aver": "Ingeniero Front-end",
-    "aver-duration": "Julio de 2017 a Noviembre de 2017",
-    "capitalone": "Ingeniero de programación superior",
-    "capitalone-duration": "Julio de 2014 - Mayo de 2017"
-  },
   "projects": {
     "title": "Proyectos",
     "description": "Sitio web de guardería para mascotas local"
@@ -34,5 +25,6 @@
     "duration": "Septiembre de 2009 - Diciembre de 2013"
   },
   "trans": "Cambiaste el <1><0>idioma</0></1>  <3>{{count}}</3> tiempo",
-  "trans_plural": "Cambiaste el <1><0>idioma</0></1>  <3>{{count}}</3> veces"
+  "trans_plural": "Cambiaste el <1><0>idioma</0></1>  <3>{{count}}</3> veces",
+  "date": "La fecha actual es {{date, MMMM Do}}"
 }

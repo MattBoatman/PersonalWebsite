@@ -8,25 +8,25 @@ const Work = ({ t }) => {
     <ContentBlock
       backgroundColor="#E8EAF6"
       color="#00796B"
-      title={t('work.history')}
+      title={t('work:history')}
     >
       <TimeBlock
         place="Improving"
-        duration={t('work.improving-duration')}
-        title={t('work.improving')}
+        duration={t('work:improving-duration')}
+        title={t('work:improving')}
       />
       <TimeBlock
         place="Aver"
-        duration={t('work.aver-duration')}
-        title={t('work.aver')}
+        duration={t('work:aver-duration')}
+        title={t('work:aver')}
       />
       <TimeBlock
         place="Capital One"
-        duration={t('work.capitalone-duration')}
-        title={t('work.capitalone')}
+        duration={t('work:capitalone-duration')}
+        title={t('work:capitalone')}
       />
     </ContentBlock>
   );
 };
 
-export default translate()(Work);
+export default translate('work')(Work);
