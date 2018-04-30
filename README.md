@@ -231,3 +231,27 @@ The [Trans Component](https://react.i18next.com/components/trans-component) enab
 "userMessagesUnread": "Hello <1><0>{{name}}</0></1>, you have <3>{{count}}</3> unread message. <5>Go to message</5>.",
 "userMessagesUnread_plural": "Hello <1><0>{{name}}</0></1>, you have <3>{{count}}</3> unread messages.  <5>Go to messages</5>.",
 ```
+
+# Best Practices
+
+## Date and Time
+Don't hardcode date formats.
+
+## Units
+Different locales will have spaces between number and the symbol identifier, don't hardcode this either.
+
+## Splitting
+Splitting sentences into multiple keys assumes grammar for a certain language. DON'T do this. This is a common problem interpolation will fix.
+
+## Context
+It's often unwise to reuse strings in different contexts. In different languages context means different nouns and verbs might be used in different ways. For example, `bookmark` both a noun and verb in english.
+
+## CSS
+`text-transform` won't work as expected for some languages.
+
+## Design for +50%
+English is much shorter than most languages
+
+`Save document?` in English becomes `A bheil thu airson an sgrìobhainn a shàbhaladh` in Gaelic.
+
+More information found on [W3C](https://www.w3.org/International/articles/article-text-size)
