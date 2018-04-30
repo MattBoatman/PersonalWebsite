@@ -1,5 +1,5 @@
 # i18Next
-[i18Next](https://www.i18next.com/) is a complete solution with plugins for all of the frameworks we currently support. This solution has support for detecting user language, loading translations, caching and more.
+[i18Next](https://www.i18next.com/)
 
 ## Configuration
 [Configuration](https://www.i18next.com/configuration-options.html) for applications would be likely the same across applications. Here is where we define [name spaces](https://www.i18next.com/principles/namespaces.html), [resources](https://www.i18next.com/add-or-load-translations.html), default languages and fall back keys.
