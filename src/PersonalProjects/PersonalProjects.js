@@ -16,7 +16,7 @@ const PersonalProjects = ({ t }) => {
             Playful Pets
           </a>
         }
-        title={<LocalizedText text="projects.description" />}
+        title={<LocalizedText text="projects-description" />}
         link="http://playfulpets.s3-website-us-east-1.amazonaws.com/"
       />
     </ContentBlock>
