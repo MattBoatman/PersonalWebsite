@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ContentBlock from '../ContentBlock';
+import LocalizedText from '../locales/LocalizedText';
 
 const styles = {
   content: {
@@ -13,20 +14,20 @@ const styles = {
 class About extends Component {
   render() {
     return (
-      <ContentBlock backgroundColor="#FFFFFF" color="#1E1D32" title="About">
+      <ContentBlock
+        backgroundColor="#FFFFFF"
+        color="#1E1D32"
+        title={<LocalizedText text="about-title" />}
+      >
         <div style={styles.content}>
           <p>
-            I'm Matt Boatman, a software engineer living in Columbus, Ohio. I
-            work as a Senior Consultant for Improving.
+            <LocalizedText text="about-p1" />
           </p>
           <p>
-            I'm happily married to my wonderful wife, Julie, who is a resident
-            physician at Mount Carmel West hospital. We are proud dog parents to
-            the cutest dog in the whole world, Belle.
+            <LocalizedText text="about-p2" />
           </p>
           <p>
-            In my free time I love to cook, garden, drink coffee in the morning
-            and beer at night, play video or board games, and eating good food.
+            <LocalizedText text="about-p2" />
           </p>
         </div>
       </ContentBlock>

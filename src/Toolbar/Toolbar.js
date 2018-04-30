@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ToolbarButtons from './ToolbarButtons';
+import LocalizedText from '../locales/LocalizedText';
 
 const styles = {
   toolbarWrapper: {

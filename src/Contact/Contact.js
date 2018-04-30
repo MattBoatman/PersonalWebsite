@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentBlock from '../ContentBlock';
 import SocialAccounts from '../SocialAccounts';
+import LocalizedText from '../locales/LocalizedText';
 
 const styles = {
   content: {
@@ -18,13 +19,16 @@ const styles = {
   }
 };
 
-const Contact = () => {
+const Contact = props => {
   return (
-    <ContentBlock backgroundColor="#CFD8DC" color="#004D40" title="Contact">
+    <ContentBlock
+      backgroundColor="#CFD8DC"
+      color="#004D40"
+      title={<LocalizedText text="contact-title" />}
+    >
       <div style={styles.content}>
         <p>
-          If you are interested in collaborating or would like to connect,
-          please reach out!{' '}
+          <LocalizedText text="contact-interested" />}
           <a
             style={styles.email}
             href="mailto:matthewd.boatman@gmail.com"

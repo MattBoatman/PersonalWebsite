@@ -1,33 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TimeBlock from '../TimeBlock';
 import ContentBlock from '../ContentBlock';
+import LocalizedText from '../locales/LocalizedText';
 
-class Work extends Component {
-  render() {
-    return (
-      <ContentBlock
-        backgroundColor="#E8EAF6"
-        color="#00796B"
-        title="Work History"
-      >
-        <TimeBlock
-          place="Improving"
-          duration="Nov 2017 - Present"
-          title="Senior Consultant"
-        />
-        <TimeBlock
-          place="Aver"
-          duration="July 2017 - Nov 2017"
-          title="Front-end Engineer"
-        />
-        <TimeBlock
-          place="Capital One"
-          duration="July 2014 - May 2017"
-          title="Senior Software Engineer"
-        />
-      </ContentBlock>
-    );
-  }
-}
+const Work = ({ t }) => {
+  return (
+    <ContentBlock
+      backgroundColor="#E8EAF6"
+      color="#00796B"
+      title={<LocalizedText text="work-history" />}
+    >
+      <TimeBlock
+        place="Improving"
+        duration={<LocalizedText text="work-improving-duration" />}
+        title={<LocalizedText text="work-improving" />}
+      />
+      <TimeBlock
+        place="Aver"
+        duration={<LocalizedText text="work-aver-duration" />}
+        title={<LocalizedText text="work-aver" />}
+      />
+      <TimeBlock
+        place="Capital One"
+        duration={<LocalizedText text="work-capitalone-duration" />}
+        title={<LocalizedText text="work-capitalone" />}
+      />
+    </ContentBlock>
+  );
+};
 
 export default Work;
