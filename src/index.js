@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from './App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import FantasyFootball from './FantasyFootball/FantasyFootball';
 import Toolbar from './Toolbar';
 
 ReactDOM.render(
@@ -12,7 +11,6 @@ ReactDOM.render(
     <div>
       <Toolbar title="Matt Boatman" />
       <Route exact path="/" component={App} />
-      <Route exact path="/fantasy-commissioner" component={FantasyFootball} />
     </div>
   </Router>,
   document.getElementById('root')
