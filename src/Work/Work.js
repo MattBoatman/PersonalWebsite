@@ -1,32 +1,32 @@
 import React from 'react';
 import TimeBlock from '../TimeBlock';
 import ContentBlock from '../ContentBlock';
-import { translate } from 'react-i18next';
+import LocalizedText from '../locales/LocalizedText';
 
 const Work = ({ t }) => {
   return (
     <ContentBlock
       backgroundColor="#E8EAF6"
       color="#00796B"
-      title={t('work:history')}
+      title={<LocalizedText text="work-history" />}
     >
       <TimeBlock
         place="Improving"
-        duration={t('work:improving-duration')}
-        title={t('work:improving')}
+        duration={<LocalizedText text="work-improving-duration" />}
+        title={<LocalizedText text="work-improving" />}
       />
       <TimeBlock
         place="Aver"
-        duration={t('work:aver-duration')}
-        title={t('work:aver')}
+        duration={<LocalizedText text="work-aver-duration" />}
+        title={<LocalizedText text="work-aver" />}
       />
       <TimeBlock
         place="Capital One"
-        duration={t('work:capitalone-duration')}
-        title={t('work:capitalone')}
+        duration={<LocalizedText text="work-capitalone-duration" />}
+        title={<LocalizedText text="work-capitalone" />}
       />
     </ContentBlock>
   );
 };
 
-export default translate('work')(Work);
+export default Work;

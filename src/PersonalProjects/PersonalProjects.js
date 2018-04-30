@@ -1,14 +1,14 @@
 import React from 'react';
 import TimeBlock from '../TimeBlock';
 import ContentBlock from '../ContentBlock';
-import { translate } from 'react-i18next';
+import LocalizedText from '../locales/LocalizedText';
 
 const PersonalProjects = ({ t }) => {
   return (
     <ContentBlock
       backgroundColor="#b0bec5"
       color="#263238"
-      title={t('projects.title')}
+      title={<LocalizedText text="projects-title" />}
     >
       <TimeBlock
         place={
@@ -16,11 +16,11 @@ const PersonalProjects = ({ t }) => {
             Playful Pets
           </a>
         }
-        title={t('projects.description')}
+        title={<LocalizedText text="projects.description" />}
         link="http://playfulpets.s3-website-us-east-1.amazonaws.com/"
       />
     </ContentBlock>
   );
 };
 
-export default translate()(PersonalProjects);
+export default PersonalProjects;

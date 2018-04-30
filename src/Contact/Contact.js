@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentBlock from '../ContentBlock';
 import SocialAccounts from '../SocialAccounts';
-import { translate } from 'react-i18next';
+import LocalizedText from '../locales/LocalizedText';
 
 const styles = {
   content: {
@@ -19,16 +19,16 @@ const styles = {
   }
 };
 
-const Contact = ({ t }) => {
+const Contact = props => {
   return (
     <ContentBlock
       backgroundColor="#CFD8DC"
       color="#004D40"
-      title={t('contact.title')}
+      title={<LocalizedText text="contact-title" />}
     >
       <div style={styles.content}>
         <p>
-          {t('contact.interested')}
+          <LocalizedText text="contact-interested" />}
           <a
             style={styles.email}
             href="mailto:matthewd.boatman@gmail.com"
@@ -48,4 +48,4 @@ const Contact = ({ t }) => {
   );
 };
 
-export default translate()(Contact);
+export default Contact;

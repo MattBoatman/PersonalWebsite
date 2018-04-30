@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ContentBlock from '../ContentBlock';
-import { I18n } from 'react-i18next';
+import LocalizedText from '../locales/LocalizedText';
 
 const styles = {
   content: {
@@ -14,21 +14,23 @@ const styles = {
 class About extends Component {
   render() {
     return (
-      <I18n>
-        {t => (
-          <ContentBlock
-            backgroundColor="#FFFFFF"
-            color="#1E1D32"
-            title={t('about.title')}
-          >
-            <div style={styles.content}>
-              <p>{t('about.p1')}</p>
-              <p>{t('about.p2')}</p>
-              <p>{t('about.p3')}</p>
-            </div>
-          </ContentBlock>
-        )}
-      </I18n>
+      <ContentBlock
+        backgroundColor="#FFFFFF"
+        color="#1E1D32"
+        title={<LocalizedText text="about-title" />}
+      >
+        <div style={styles.content}>
+          <p>
+            <LocalizedText text="about-p1" />
+          </p>
+          <p>
+            <LocalizedText text="about-p2" />
+          </p>
+          <p>
+            <LocalizedText text="about-p2" />
+          </p>
+        </div>
+      </ContentBlock>
     );
   }
 }

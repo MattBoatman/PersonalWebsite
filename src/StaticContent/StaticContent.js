@@ -4,15 +4,15 @@ import sqMe from '../MattBoatman_sq.JPG';
 import us from '../US.svg';
 import es from '../mx.svg';
 import './StaticContent.css';
-import { I18n, Trans } from 'react-i18next';
-import i18n from 'i18next';
+import { connect } from 'react-redux';
+import LocalizedText from '../locales/LocalizedText';
 
 class StaticContent extends React.Component {
   state = {
-    clicked: 0
+    clicked: 1
   };
   clickFlag = locale => {
-    i18n.changeLanguage(locale);
+    this.props.changeLocale(locale);
     this.setState(prevState => {
       return { clicked: prevState.clicked + 1 };
     });
@@ -20,42 +20,52 @@ class StaticContent extends React.Component {
 
   render() {
     return (
-      <I18n>
-        {(t, { i18n }) => (
-          <div className="pageLeft">
-            <div className="pageContent">
-              <div className="avatarWrapper">
-                <Avatar imageURL={sqMe} />
-                <div className="about">
-                  <h1>{t('static.h1')}</h1>
-                </div>
-                <div className="flags">
-                  <img
-                    className="image"
-                    src={us}
-                    alt=""
-                    onClick={() => this.clickFlag('en')}
-                  />
-                  <img
-                    className="image"
-                    src={es}
-                    alt=""
-                    onClick={() => this.clickFlag('es')}
-                  />
-                  <div>
-                    <Trans i18nKey="trans" count={this.state.clicked}>
-                      You changed the <strong> language </strong>{' '}
-                      {{ count: this.state.clicked }} times
-                    </Trans>
-                  </div>
-                </div>
+      <div className="pageLeft">
+        <div className="pageContent">
+          <div className="avatarWrapper">
+            <Avatar imageURL={sqMe} />
+            <div className="about">
+              <h1>
+                {' '}
+                <LocalizedText text="static-h1" />
+              </h1>
+            </div>
+            <div className="flags">
+              <img
+                className="image"
+                src={us}
+                alt=""
+                onClick={() => this.clickFlag('en')}
+              />
+              <img
+                className="image"
+                src={es}
+                alt=""
+                onClick={() => this.clickFlag('es')}
+              />
+              <div>
+                <LocalizedText
+                  text="trans"
+                  replacementValue={this.state.clicked}
+                />
               </div>
             </div>
           </div>
-        )}
-      </I18n>
+        </div>
+      </div>
     );
   }
 }
 
-export default StaticContent;
+const mapDispatchToProps = dispatch => {
+  return {
+    changeLocale: locale => {
+      dispatch({
+        type: 'SET_LOCALE',
+        locale
+      });
+    }
+  };
+};
+
+export default connect(null, mapDispatchToProps)(StaticContent);
