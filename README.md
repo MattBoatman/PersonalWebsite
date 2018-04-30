@@ -1,3 +1,5 @@
-This website was built using [Create React App](https://github.com/facebookincubator/create-react-app).
+# Redux
+If a project is already using Redux and is looking to optimize on package size, a home rolled solution can be implemented instead of additional 3rd party libraries. This delegates all locale related needs to a locale reducer. Then anywhere text is needed, you would use the `LocalizedText` component. This will then monitor the redux store for locale changes and rerender text as needed.
 
-I will be using this site as personal branding as well as dumping ground for different things I am working on.
+## Interpolation
+Simple interpolation is implemented in this solution but would need to be enhanced for more complex scenarios (dates, complex objects, plurals)
