@@ -1,17 +1,22 @@
 import React from 'react';
 import ContentBlock from '../ContentBlock';
 import TimeBlock from '../TimeBlock';
+import { translate } from 'react-i18next';
 
-const Education = () => {
+const Education = ({ t }) => {
   return (
-    <ContentBlock backgroundColor="#EEEEEE" color="#E57373" title="Education">
+    <ContentBlock
+      backgroundColor="#EEEEEE"
+      color="#E57373"
+      title={t('education.title')}
+    >
       <TimeBlock
         place="Ohio State University"
-        duration="Sept 2009 - Dec 2013"
+        duration={t('education.duration')}
         title="Computer Science & Engineering"
       />
     </ContentBlock>
   );
 };
 
-export default Education;
+export default translate()(Education);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ContentBlock from '../ContentBlock';
+import { I18n } from 'react-i18next';
 
 const styles = {
   content: {
@@ -13,23 +14,21 @@ const styles = {
 class About extends Component {
   render() {
     return (
-      <ContentBlock backgroundColor="#FFFFFF" color="#1E1D32" title="About">
-        <div style={styles.content}>
-          <p>
-            I'm Matt Boatman, a software engineer living in Columbus, Ohio. I
-            work as a Senior Consultant for Improving.
-          </p>
-          <p>
-            I'm happily married to my wonderful wife, Julie, who is a resident
-            physician at Mount Carmel West hospital. We are proud dog parents to
-            the cutest dog in the whole world, Belle.
-          </p>
-          <p>
-            In my free time I love to cook, garden, drink coffee in the morning
-            and beer at night, play video or board games, and eating good food.
-          </p>
-        </div>
-      </ContentBlock>
+      <I18n>
+        {t => (
+          <ContentBlock
+            backgroundColor="#FFFFFF"
+            color="#1E1D32"
+            title={t('about.title')}
+          >
+            <div style={styles.content}>
+              <p>{t('about.p1')}</p>
+              <p>{t('about.p2')}</p>
+              <p>{t('about.p3')}</p>
+            </div>
+          </ContentBlock>
+        )}
+      </I18n>
     );
   }
 }

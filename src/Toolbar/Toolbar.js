@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ToolbarButtons from './ToolbarButtons';
+import { I18n } from 'react-i18next';
 
 const styles = {
   toolbarWrapper: {
@@ -21,6 +22,9 @@ const Toolbar = props => {
   return (
     <div style={styles.toolbarWrapper}>
       <span style={styles.title}>{props.title}</span>
+      <I18n>
+        {(t, { i18n }) => <div>{t('date', { date: new Date() })}</div>}
+      </I18n>
       <div style={styles.rightLinks}>
         {props.rightLinks &&
           props.rightLinks.map(elem => (
