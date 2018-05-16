@@ -15,17 +15,27 @@ const styles = {
 };
 const ToolbarButtons = props => {
   const onClickHandler = () => {
-    props.history.push(props.link);
+    if (props.link) {
+      props.history.push(props.link);
+    } else {
+      document
+        .getElementById(props.title)
+        .scrollIntoView({ behavior: 'smooth' });
+    }
   };
   return (
-    <button style={styles.button} onClick={onClickHandler}>
+    <button
+      style={styles.button}
+      onClick={onClickHandler}
+      href={`#${props.title}`}
+    >
       {props.title}
     </button>
   );
 };
 
 ToolbarButtons.propTypes = {
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
   title: PropTypes.string.isRequired
 };
 

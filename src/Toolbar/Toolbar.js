@@ -1,33 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ToolbarButtons from './ToolbarButtons';
+import './Toolbar.css';
 
 const styles = {
   toolbarWrapper: {
     borderBottom: '1px solid',
     display: 'flex',
     padding: 20
-  },
-  title: {
-    fontSize: 18,
-    textTransform: 'uppercase',
-    marginRight: 'auto',
-    letterSpacing: '.15em'
-  },
-  rightLinks: {}
+  }
 };
 
 const Toolbar = props => {
   return (
     <div style={styles.toolbarWrapper}>
-      <span style={styles.title}>{props.title}</span>
-      <div style={styles.rightLinks}>
+      <span className="toolbar-title">{props.title}</span>
+      <div className="rightLinks">
         {props.rightLinks &&
           props.rightLinks.map(elem => (
             <ToolbarButtons
-              key={elem.link}
+              key={elem.title}
               title={elem.title}
               link={elem.link}
+              id={elem.id}
             />
           ))}
       </div>

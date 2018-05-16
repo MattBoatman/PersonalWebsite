@@ -5,6 +5,7 @@ import './ContentBlock.css';
 const ContentBlock = props => {
   return (
     <div
+      id={props.title}
       style={{
         backgroundColor: props.backgroundColor,
         color: props.color
