@@ -7,6 +7,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import Toolbar from './Toolbar';
 import * as moment from 'moment';
+
 moment.locale('en');
 ReactDOM.render(
   <Router>

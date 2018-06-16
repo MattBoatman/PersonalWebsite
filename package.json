@@ -5,6 +5,7 @@
   "dependencies": {
     "husky": "^0.14.3",
     "i18next": "^11.2.3",
+    "i18next-pseudo": "^2.0.1",
     "lint-staged": "^7.0.0",
     "material-ui": "^1.0.0-beta.43",
     "moment": "^2.22.1",
