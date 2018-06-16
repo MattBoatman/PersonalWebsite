@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TimeBlock from '../TimeBlock';
-import ContentBlock from '../ContentBlock';
+import TimeBlock from '../../components/TimeBlock';
+import ContentBlock from '../../components/ContentBlock';
 
 class PersonalProjects extends Component {
   render() {
@@ -23,6 +23,15 @@ class PersonalProjects extends Component {
           }
           title="Plugin for i18next that enables pseudolocalization"
           link="https://www.npmjs.com/package/i18next-pseudo"
+        />
+        <TimeBlock
+          place={
+            <a href="http://dallasoutcallmassage.com/">
+              Dallas Outcall Massage
+            </a>
+          }
+          title="Website for an independent massage therapist in Dallas"
+          link="http://dallasoutcallmassage.com/"
         />
       </ContentBlock>
     );

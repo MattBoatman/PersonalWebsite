@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from '../Avatar';
-import sqMe from '../MattBoatman_sq.JPG';
+import Avatar from '../../components/Avatar';
+import sqMe from './MattBoatman_sq.JPG';
 import './StaticContent.css';
 
 const StaticContent = () => {

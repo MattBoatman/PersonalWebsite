@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TimeBlock from '../TimeBlock';
-import ContentBlock from '../ContentBlock';
+import TimeBlock from '../../components/TimeBlock';
+import ContentBlock from '../../components/ContentBlock';
 
 class Work extends Component {
   render() {

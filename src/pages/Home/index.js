@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import StaticContent from './StaticContent';
-import DynamicContent from './DynamicContent';
+import StaticContent from '../../views/StaticContent';
+import DynamicContent from '../../views/DynamicContent';
 import { Helmet } from 'react-helmet';
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
@@ -27,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;

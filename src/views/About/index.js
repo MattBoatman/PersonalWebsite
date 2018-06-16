@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ContentBlock from '../ContentBlock';
+import ContentBlock from '../../components/ContentBlock';
 
 const styles = {
   content: {

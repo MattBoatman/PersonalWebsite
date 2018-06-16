@@ -1,6 +1,6 @@
 import React from 'react';
-import ContentBlock from '../ContentBlock';
-import SocialAccounts from '../SocialAccounts';
+import ContentBlock from '../../components/ContentBlock';
+import SocialAccounts from '../../components/SocialAccounts';
 
 const styles = {
   content: {
