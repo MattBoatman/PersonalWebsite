@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import StaticContent from '../../views/StaticContent';
-import DynamicContent from '../../views/DynamicContent';
-import { Helmet } from 'react-helmet';
+import React, { Component } from "react";
+import StaticContent from "../../views/StaticContent";
+import DynamicContent from "../../views/DynamicContent";
+import { Helmet } from "react-helmet";
+import Toolbar from '../../components/Toolbar';
 
 class Home extends Component {
   render() {
@@ -20,6 +21,17 @@ class Home extends Component {
           />
           <meta name="author" content="Matt Boatman" />
         </Helmet>
+        <Toolbar
+          title="Matt Boatman"
+          rightLinks={[
+            { title: "About" },
+            { title: "Work" },
+            { title: "Projects" },
+            { title: "Education" },
+            { title: "Contact" },
+            {title: "Résumé", link: '/resume'}
+          ]}
+        />
         <StaticContent />
         <DynamicContent />
       </div>
