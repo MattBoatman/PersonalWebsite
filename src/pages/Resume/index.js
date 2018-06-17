@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Toolbar from "../../components/Toolbar";
-import ContentBlock from "../../components/ContentBlock";
 import TimeBlock from "../../components/TimeBlock";
 
 class Home extends Component {
@@ -215,6 +214,13 @@ class Home extends Component {
             <ul>
               <LI>Ruby, web design</LI>
             </ul>
+            <hr />
+            <h1>Education</h1>
+            <TimeBlock
+              place="Ohio State University"
+              duration="Sept 2009 - Dec 2013"
+              title="Computer Science & Engineering"
+            />
           </Content>
         </Wrapper>
       </div>
@@ -228,7 +234,6 @@ const Wrapper = styled.div`
 `;
 const A = styled.a`
   color: #efdcd3;
-  /* text-decoration: none; */
 `;
 
 const LI = styled.li`
@@ -238,6 +243,10 @@ const LI = styled.li`
 const Content = styled.div`
   padding: 24px;
   width: 80%;
+  @media (min-width: 320px) and (max-width: 600px) {
+      width: 100%;
+      padding: 12px;
+  }
 `;
 
 const Client = styled.div`
