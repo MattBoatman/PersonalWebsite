@@ -197,17 +197,18 @@ class Home extends Component {
             <Client>Skilled in:</Client>
             <ul>
               <LI>
-                Javascript, ES6, React, Redux, Redux Thunk, AngularJS, Enzyme,
-                Chai, Webpack, npm, Jasmine, Karma, Node.JS, Java, CSS3, HTML5,
-                Jenkins, Travis, Github, AWS S3/Route 53, Docker, Material-UI,
-                Bootstrap, Accessibility Standards, BrowserStack, Sinon
+                Javascript, ES6, React, React-Native, Redux, Redux Thunk,
+                Angular, Enzyme, Chai, Webpack, Flow, npm, Jasmine, Karma,
+                Node.JS, Java, CSS3, HTML5, Jenkins, Travis, Github, AWS
+                S3/Route 53, Docker, Material-UI, Bootstrap, Accessibility
+                Standards, BrowserStack, Sinon
               </LI>
             </ul>
             <Client>Experience with:</Client>
             <ul>
               <LI>
-                C#, Typescript, Angular, Underscore.js, Lodash, RequireJS,
-                express, MongoDB, gulp, C++, C, Selenium, Babel
+                C#, Typescript, Underscore.js, Lodash, express, MongoDB, gulp,
+                C++, C, Selenium, Babel, Redux-Observable
               </LI>
             </ul>
             <Client>Learning:</Client>
@@ -244,8 +245,8 @@ const Content = styled.div`
   padding: 24px;
   width: 80%;
   @media (min-width: 320px) and (max-width: 600px) {
-      width: 100%;
-      padding: 12px;
+    width: 100%;
+    padding: 12px;
   }
 `;
 
