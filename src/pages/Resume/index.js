@@ -73,6 +73,9 @@ class Home extends Component {
                 to help developers create UIs without focusing on the length of
                 english words
               </LI>
+              <LI>
+              Converted an existing web app to a progressive web app
+              </LI>
             </ul>
             <Client>Client: Roofsnap</Client>
             <ul>
@@ -207,7 +210,7 @@ class Home extends Component {
             <Client>Experience with:</Client>
             <ul>
               <LI>
-                C#, Typescript, Underscore.js, Lodash, express, MongoDB, gulp,
+                Service workers, PWAs, C#, Typescript, Underscore.js, Lodash, express, MongoDB, gulp,
                 C++, C, Selenium, Babel, Redux-Observable
               </LI>
             </ul>
