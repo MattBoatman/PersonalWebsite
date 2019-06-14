@@ -17,7 +17,7 @@ class About extends Component {
         <div style={styles.content}>
           <p>
             I'm Matt Boatman, a software engineer living in Columbus, Ohio. I
-            work as a Senior Consultant for Improving.
+            work as a Senior Software Engineer at Olive.
           </p>
           <p>
             I'm happily married to my wonderful wife, Julie, who is a resident
