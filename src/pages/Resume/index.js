@@ -22,8 +22,25 @@ class Home extends Component {
           <Content>
             <h1>Work Experience</h1>
             <TimeBlock
+              place="Olive"
+              duration="Nov 2018 - Present"
+              title="Senior Full Stack Engineer"
+            />
+            <ul>
+              <LI>
+                Full Stack Engineer with a UI speciality. Works with React, Redux, Node, Go and differing AWS services
+              </LI>
+              <LI>
+                Rapidly scopes, plans, and develops applications as presented by the business
+              </LI>
+              <LI>
+                Nominated by peers and rewarded the title of "Chief". A Chief at Olive is a techinical leader who is a go to person to give guidance to other engineers as well as consul leadership within the company
+              </LI>
+            </ul>
+            <hr />
+            <TimeBlock
               place="Improving"
-              duration="Nov 2017 - Present"
+              duration="Nov 2017 - Nov 2018"
               title="Senior Consultant"
             />
             <Client>Client: Wendy's</Client>
