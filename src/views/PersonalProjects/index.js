@@ -8,6 +8,15 @@ class PersonalProjects extends Component {
       <ContentBlock backgroundColor="#b0bec5" color="#263238" title="Projects">
         <TimeBlock
           place={
+            <a href="http://tysnotfunny.com">
+              Tys not funny
+            </a>
+          }
+          title="Personal Website for Comic Ty Moore"
+          link="http://tysnotfunny.com"
+        />
+        <TimeBlock
+          place={
             <a href="http://playfulpets.s3-website-us-east-1.amazonaws.com/">
               Playful Pets
             </a>
