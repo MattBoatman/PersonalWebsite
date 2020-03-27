@@ -34,7 +34,7 @@ class Home extends Component {
                 Rapidly scopes, plans, and develops applications as presented by the business
               </LI>
               <LI>
-                Nominated by peers and rewarded the title of "Chief". A Chief at Olive is a techinical leader who is a go to person to give guidance to other engineers as well as consul leadership within the company
+                Nominated by peers and rewarded the title of "Chief". A Chief at Olive is a techinical leader who is a go to person to give guidance to other engineers as well as counsel leadership within the company
               </LI>
             </ul>
             <hr />
