@@ -22,8 +22,25 @@ class Home extends Component {
           <Content>
             <h1>Work Experience</h1>
             <TimeBlock
+              place="Capital One"
+              duration="June 2020 - Present"
+              title="Senior Full Stack Engineer"
+            />
+            <ul>
+              <LI>
+                Suggest your description and I will write it here.
+              </LI>
+              <LI>
+                You could consider combining the two different Capital One methods, though the duration piece might get weird.
+              </LI>
+              <LI>
+                 Started a cookbook club and falsely accused Mark of being from New Jersey. 
+              </LI>
+            </ul>
+            <hr />
+            <TimeBlock
               place="Olive"
-              duration="Nov 2018 - Present"
+              duration="Nov 2018 - May 2020"
               title="Senior Full Stack Engineer"
             />
             <ul>
