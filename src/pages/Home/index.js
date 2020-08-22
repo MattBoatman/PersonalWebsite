@@ -12,7 +12,7 @@ class Home extends Component {
           <title>Matt Boatman</title>
           <meta
             name="description"
-            content="Software Engineer Matt Boatman, located in Columbus, Ohio. Specializing in front-end frameworks like React and Angular."
+            content="Software Engineer Matt Boatman, located in Richmond, Virginia. Specializing in front-end frameworks like React and Angular."
           />
           <meta property="og:url" content="http://matthewboatman.com" />
           <meta
